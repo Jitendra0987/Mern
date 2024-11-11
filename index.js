@@ -1,8 +1,5 @@
-
-
 const fs = require("fs")
-
-fs.writeFile("raj.txt","hello friends ",(err)=>{
-    if(err) throw err;
-    console.log("file name changed")
+fs.appendFile("ankur.docs", " hellow we are mern student ", (err)=>{
+    if(err)  throw err;
+    console.log(" file succesfulley created!!!")
 })
