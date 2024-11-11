@@ -1,12 +1,8 @@
 
-const http = require("http");
+
 const fs = require("fs")
 
-http.createServer((req,res)=>{
-    fs.readFile("ayushi.txt",(err,data)=>{
-
-        res.write(data);
-        res.end();
-    })
-
-}).listen(8000)
+fs.writeFile("raj.txt","hello friends ",(err)=>{
+    if(err) throw err;
+    console.log("file name changed")
+})
