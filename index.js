@@ -1,5 +1,5 @@
-const fs = require("fs")
-fs.open("raj.txt","w",(err)=>{
+const fs = require("fs");
+fs.unlink("jscrate.jsx",(err)=>{
     if (err) throw err;
-    console.log("file")
+    console.log("file deleted!!!!")
 })
